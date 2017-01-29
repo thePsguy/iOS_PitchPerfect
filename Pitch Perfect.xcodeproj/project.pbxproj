@@ -62,8 +62,8 @@
 				DA6969F81E3BBB7F009DBA68 /* RecordSoundsViewController.swift */,
 				DA696A081E3C1207009DBA68 /* PlaySoundsViewController.swift */,
 				DA27C19C1E3D499D00DB9078 /* playsoundsviewcontroller-audio.swift */,
-				DA6969FF1E3BBB7F009DBA68 /* LaunchScreen.storyboard */,
 				DA6969FA1E3BBB7F009DBA68 /* Main.storyboard */,
+				DA6969FF1E3BBB7F009DBA68 /* LaunchScreen.storyboard */,
 				DA6969FD1E3BBB7F009DBA68 /* Assets.xcassets */,
 				DA696A021E3BBB7F009DBA68 /* Info.plist */,
 			);
