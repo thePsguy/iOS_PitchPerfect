@@ -82,10 +82,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GfI-uz-mTO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="GfI-uz-mTO">
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zO0-jU-qlC" userLabel="Button Stack">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="zO0-jU-qlC" userLabel="Button Stack">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="539"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-bO-ax3">
@@ -147,21 +147,23 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaD-ck-GMI" userLabel="Stop Button">
-                                        <rect key="frame" x="139.5" y="539" width="64" height="64"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="64" id="0X5-0H-FeI"/>
-                                            <constraint firstAttribute="width" constant="64" id="MWE-T2-0jX"/>
-                                        </constraints>
-                                        <state key="normal" image="Stop"/>
-                                        <connections>
-                                            <action selector="stopButtonPressed:" destination="qJu-98-eVF" eventType="touchUpInside" id="O9s-R8-4hG"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d2C-33-bei">
+                                        <rect key="frame" x="0.0" y="539" width="343" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaD-ck-GMI" userLabel="Stop Button">
+                                                <rect key="frame" x="139.5" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="0X5-0H-FeI"/>
+                                                    <constraint firstAttribute="width" constant="64" id="MWE-T2-0jX"/>
+                                                </constraints>
+                                                <state key="normal" image="Stop"/>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="qJu-98-eVF" eventType="touchUpInside" id="O9s-R8-4hG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="zO0-jU-qlC" firstAttribute="leading" secondItem="GfI-uz-mTO" secondAttribute="leading" id="eGQ-lm-IZk"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,6 +182,7 @@
                         <outlet property="reverbButton" destination="qne-LM-AKQ" id="F2K-gf-g6x"/>
                         <outlet property="snailButton" destination="VTf-aA-Do7" id="Iw5-Xb-BNO"/>
                         <outlet property="stopButton" destination="yaD-ck-GMI" id="z1F-zQ-bFz"/>
+                        <outlet property="stopButtonStack" destination="d2C-33-bei" id="wpX-Jg-KKC"/>
                         <outlet property="vaderButton" destination="9p5-ut-q1B" id="B6X-dn-O4m"/>
                     </connections>
                 </viewController>

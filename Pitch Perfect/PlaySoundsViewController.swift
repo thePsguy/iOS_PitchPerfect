@@ -22,6 +22,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var outerStack: UIStackView!
+    @IBOutlet weak var stopButtonStack: UIStackView!
     
     // Audio Extension Properties
     var audioFile:AVAudioFile!
@@ -88,8 +89,10 @@ class PlaySoundsViewController: UIViewController {
         switch orientation {
         case .portrait:
             outerStack.axis = .vertical
+            stopButtonStack.axis = .vertical
         default:
             outerStack.axis = .horizontal
+            stopButtonStack.axis = .horizontal
         }
     }
 
